@@ -20,10 +20,10 @@
               <p style="text-align:center">
                 <name>Hanzhi Wang &nbsp / &nbsp 王涵之</name>
               </p>
-              <p>I am currently a third-year Ph.D. student at <a href="http://info.ruc.edu.cn/en/">School of Information</a>, <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, advised by Professor <a href="http://weizhewei.com/"><b>Zhewei Wei</b></a>.
+              <p>I am currently a third-year Ph.D. candidate at <a href="http://info.ruc.edu.cn/en/">School of Information</a>, <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, advised by Professor <a href="http://weizhewei.com/"><b>Zhewei Wei</b></a>.
               </p>
               <p> 
-                I received my B.E. degree in Computer Science and Technology from School of Information, Renmin University of China in June 2019. 
+                I received my B.E. degree in Computer Science and Technology at School of Information, Renmin University of China in June 2019. 
                 <!--
                 At Google I've worked on <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://www.google.com/get/cardboard/jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, and <a href="https://www.youtube.com/watch?v=JSnB06um5r4">Glass</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I did my bachelors at the <a href="http://cs.toronto.edu">University of Toronto</a>.
                 I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>. 
@@ -61,12 +61,20 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research Interests</heading>
               <p>
-                I'm interested in graph algorithms and massive data algorithms. More precisely, my research focuses include: 
+                <!--I'm interested in graph algorithms and massive data algorithms. More precisely, my research focuses include: 
                 <ul>
                   <li> efficient approximation of node proximities
                   <li> exact computation of single-source SimRank results
                   <li> theory on graph representation learning
                 </ul>
+                -->
+                My research focuses on the development of provably-good scalable algorithms for graph data. In particular, I am interested in designing nearly linear or sub-linear time algorithms for large-scale graph analysis and learning problems.
+              </p>
+              <p>
+              Specifically, my research work can be categorized as:  
+              <li> efficient approximation of node proximities (e.g., PageRank)
+              <li> efficient approximation of node similarities (e.g., SimRank)
+              <li> scalable Graph Neural Networks (GNN) models
               </p>
             </td>
           </tr>
@@ -75,7 +83,7 @@
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
+        <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Publications</heading>
               <p>
@@ -103,6 +111,92 @@
 
             -->
             
+              <a href="https://wanghzccls.github.io/">
+              <papertitle>Edge-based Local Push for Personalized PageRank.</papertitle>
+              </a>
+              <br>
+              <strong>Hanzhi Wang</strong>,
+              Zhewei Wei*,
+              Junhao Gan, 
+              Ye Yuan, 
+              Xiaoyong Du, 
+              Ji-Rong Wen
+              <br>
+              <em>To appear in VLDB</em>, 2022
+              <br>
+
+              <a href="https://arxiv.org/pdf/2203.07937.pdf">Technical Report</a>
+
+              <p></p>
+              <p>The state-of-the-art algorithm, LocalPush, for Personalized PageRank computation can be rather inefficient on weighted graphs. In this paper, we propose an <em>Edge-based Push Method (EdgePush)</em>, which decomposes the push operation of LocalPush into separate edge-based push operations and achieves superior query efficiency over LocalPush on weighted graphs.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+            <!--
+              <div class="one">
+                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerfbake_15.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerfbake_160.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfbake_start() {
+                  document.getElementById('nerfbake_image').style.opacity = "1";
+                }
+
+                function nerfbake_stop() {
+                  document.getElementById('nerfbake_image').style.opacity = "0";
+                }
+                nerfbake_stop()
+              </script>
+
+            -->  
+              <a href="https://wanghzccls.github.io/">
+              <papertitle>Instant Graph Neural Networks for Dynamic Graphs.</papertitle>
+              </a>
+              <br>
+              Yanping Zheng, 
+              <strong>Hanzhi Wang</strong>,
+              Zhewei Wei*,
+              Jiajun Liu, 
+              Sibo Wang
+              <br>
+              <em>To appear in KDD</em>, 2022
+              <br>
+
+              <a href="https://arxiv.org/pdf/2206.01379.pdf">Technical Report</a>
+
+
+              <p></p>
+              <p>We propose <em>Instant Graph Neural Network (InstantGNN)</em>, an incremental computation approach to support instant updates of graph representation results on dynamic graphs.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+            <!--
+              <div class="one">
+                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerfbake_15.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerfbake_160.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfbake_start() {
+                  document.getElementById('nerfbake_image').style.opacity = "1";
+                }
+
+                function nerfbake_stop() {
+                  document.getElementById('nerfbake_image').style.opacity = "0";
+                }
+                nerfbake_stop()
+              </script>
+
+            -->  
               <a href="https://dl.acm.org/doi/abs/10.1145/3447548.3467243">
               <papertitle>Approximate Graph Propagation</papertitle>
               </a>
@@ -130,6 +224,7 @@
               <p>We propose <em>Approximate Graph Propagation (AGP)</em>, a unified randomized algorithm that computes various proximity queries and GNN feature propagation in almost optimal time complexity.</p>
             </td>
           </tr>
+
 
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -221,7 +316,7 @@
               /
               <a href="https://wanghzccls.github.io/slides/RBS_KDD'20.pptx">slide</a>
               <p></p>
-              <p>We propose <em>Randomized Backward Search (RBS)</em>, a novel algorithm that answers approximate single-target personalized PageRank queries with near optimal computational complexity. </p>
+              <p>We propose <em>Randomized Backward Search (RBS)</em>, a novel algorithm that answers approximate single-target personalized PageRank queries (also known as PageRank contribution queries) with near optimal time complexity. </p>
             </td>
           </tr>
 
@@ -265,7 +360,7 @@
               /
               <a href="https://wanghzccls.github.io/slides/ExactSim_SIGMOD'20.pptx">slide</a>
               <p></p>
-              <p>We propose <em>ExactSim</em>, the first algorithm that enables probabilistic exact single-source SimRank queries on large graphs. ExactSim can provide the ground truth for any single-source SimRank query with a precision up to 7 decimal places within a reasonable query time.</p>
+              <p>We propose <em>ExactSim</em>, the first algorithm that enables probabilistic exact single-source SimRank queries on large graphs. ExactSim can provide the ground truth with a precision up to 7 decimal places for single-source SimRank queries on large graphs within a reasonable query time.</p>
             </td>
           </tr>
         </tbody></table>
@@ -305,15 +400,14 @@
             <tr>
             <td width="100%" valign="middle">
               <heading>Honors and Awards</heading>
-                <ul>
-                  <li> National Scholarship, 2021. 
-                </ul>
-                <ul>
-                  <li> The Outstanding Innovative Talents Cultivation Funded Programs 2020 of Renmin Univertity of China, 2020. 
-                </ul>
-                 <ul>
-                  <li> China National Petroleum Corporation (CNPC) Scholarship, 2020. 
-                </ul>
+              <ul></ul>
+              <li> <strong>Baidu Scholarship</strong>, 2021 <strong>(10 students worldwide)</strong>. 
+              <ul> </ul>
+              <li> National Scholarship, 2021. 
+              <ul></ul>
+              <li> The Outstanding Innovative Talents Cultivation Funded Programs of Renmin University of China, 2020. 
+              <ul></ul>
+              <li> China National Petroleum Corporation (CNPC) Scholarship, 2020. 
             </td>
           </tr>
         </table>
@@ -324,25 +418,25 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tr>
             <td width="100%" valign="middle">
-              <heading>Invited Talks</heading>
-              <ul>
-                  <li> <papertitle>Approximate Graph Propagation. </papertitle>
-                    <a href="https://wanghzccls.github.io/slides/AMiner_AGP.pptx">[slide]</a>
-                      <br><em>AMiner </em>
-                      <br>Online, Oct. 2021
-              </ul>
-              <ul>
-                  <li> <papertitle>Efficient Computation of Random Walk and the Applications in Graph Representation Learning. </papertitle>
+            <heading>Invited Talks</heading>
+            <ul></ul>
+            <papertitle>Approximate Graph Propagation. </papertitle>
+                  <a href="https://wanghzccls.github.io/slides/AMiner_AGP.pptx">[slide]</a>
+                    <br><em>AMiner </em>
+                    <br>Online, Oct. 2021
+            <ul></ul>
+              
+            <papertitle>Efficient Computation of Random Walk and the Applications in Graph Representation Learning. </papertitle>
                     <a href="https://wanghzccls.github.io/slides/DataFun_KDD'21_final.pptx">[slide]</a>
                       <br><em>DataFun </em>
                       <br>Online, Aug. 2021
-              </ul>
-              <ul>
-                  <li> <papertitle>A Near Optimal Algorithm for Single-Target Personalized PageRank. </papertitle>
-                      <a href="https://wanghzccls.github.io/slides/SMP_KDD20_final.pptx">[slide]</a>
+            <ul></ul>
+              
+            <papertitle>A Near Optimal Algorithm for Single-Target Personalized PageRank. </papertitle>
+                  <a href="https://wanghzccls.github.io/slides/SMP_KDD20_final.pptx">[slide]</a>
                       <br>The 9th National Social Media Processing Conference (<em>SMP</em>,  2020)
                       <br>Online, Sept. 2020
-              </ul>
+            
 
 
               <p></p>
@@ -358,7 +452,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                  Last update: Oct 2021 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
+                  Last update: June 2022 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
               </p>
             </td>
           </tr>
