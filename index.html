@@ -20,10 +20,10 @@
               <p style="text-align:center">
                 <name>Hanzhi Wang &nbsp / &nbsp 王涵之</name>
               </p>
-              <p>I am currently a third-year Ph.D. candidate at <a href="http://info.ruc.edu.cn/en/">School of Information</a>, <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, advised by Professor <a href="http://weizhewei.com/"><b>Zhewei Wei</b></a>.
+              <p>I am currently a fourth-year Ph.D. candidate at School of Information, <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, where I am very fortunate to be advised by Professor <a href="http://weizhewei.com/"><b>Zhewei Wei</b></a>.
               </p>
               <p> 
-                I received my B.E. degree in Computer Science and Technology at School of Information, Renmin University of China in June 2019. 
+                Before that, I received my B.E. degree in Computer Science and Technology at School of Information, Renmin University of China in June 2019. 
                 <!--
                 At Google I've worked on <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://www.google.com/get/cardboard/jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, and <a href="https://www.youtube.com/watch?v=JSnB06um5r4">Glass</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I did my bachelors at the <a href="http://cs.toronto.edu">University of Toronto</a>.
                 I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>. 
@@ -68,17 +68,53 @@
                   <li> theory on graph representation learning
                 </ul>
                 -->
-                My research focuses on the development of provably-good scalable algorithms for graph data. In particular, I am interested in designing nearly linear or sub-linear time algorithms for large-scale graph analysis and learning problems.
-              </p>
-              <p>
-              Specifically, my research work can be categorized as:  
+              My research focuses on the development of provably-good scalable algorithms for graph data. In particular, I am interested in designing nearly linear or sub-linear time algorithms for large-scale graph analysis and learning problems.
+              Specifically, my research can be categorized into three aspects:  
+              <!--
               <li> efficient approximation of node proximities (e.g., PageRank)
               <li> efficient approximation of node similarities (e.g., SimRank)
               <li> scalable Graph Neural Networks (GNN) models
+              -->
+              <li> improving the computational complexities of various node proximity metrics, especially for PageRank, Personalized PageRank and Heat Kernel PageRank; 
+              <li> designing algorithms for efficiently estimating the popular node similarity metric, SimRank, on large graphs;
+              <li> designing scalable Graph Neural Network (GNN) models on large graphs. 
               </p>
             </td>
           </tr>
         </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>News</heading>
+            <div class="list scroll">
+            <p>
+            [01/2023] I serve as PC Member for KDD 2023.
+            </p>
+
+            <p>
+            [12/2022] I will study at National University of Singapore for a couple months as an exchange student under the supervision of Professor Xiaokui Xiao.
+            </p>
+
+            <p>
+            [12/2022] My Ph.D. Thesis Proposal get accepted, which means I am qualified to work on my Ph.D. thesis. How time flies!
+            </p>
+
+            <p>
+            [10/2022] I am honored to be awarded the 2022 Microsoft Research Asia Fellowship, which was only given to 12 Ph.D. students majoring in computer science in the Asia-Pacific region.
+            </p>
+
+            <p>
+            [12/2021] I am fortunate to receive the 2021 Baidu Scholarship, which is only awarded 10 Chinese students majoring in artificial intelligence and related areas in the world.  
+            </p>
+
+            <p>
+            [12/2021] I passed my Ph.D. quantify exam and now become a Ph.D. candidate :)
+            </p>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
       
 
 
@@ -111,7 +147,7 @@
 
             -->
             
-              <a href="https://wanghzccls.github.io/">
+              <a href="https://dl.acm.org/doi/abs/10.14778/3523210.3523216">
               <papertitle>Edge-based Local Push for Personalized PageRank.</papertitle>
               </a>
               <br>
@@ -122,10 +158,14 @@
               Xiaoyong Du, 
               Ji-Rong Wen
               <br>
-              <em>To appear in VLDB</em>, 2022
+              <em>VLDB</em>, 2022
               <br>
 
               <a href="https://arxiv.org/pdf/2203.07937.pdf">Technical Report</a>
+              /
+              <a href="https://github.com/wanghzccls/EdgePush">code</a>
+              /
+              <a href="https://wanghzccls.github.io/slides/EdgePush_presentation_final.pptx">slide</a>
 
               <p></p>
               <p>The state-of-the-art algorithm, LocalPush, for Personalized PageRank computation can be rather inefficient on weighted graphs. In this paper, we propose an <em>Edge-based Push Method (EdgePush)</em>, which decomposes the push operation of LocalPush into separate edge-based push operations and achieves superior query efficiency over LocalPush on weighted graphs.</p>
@@ -134,27 +174,7 @@
 
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-            <!--
-              <div class="one">
-                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfbake_15.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfbake_160.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfbake_start() {
-                  document.getElementById('nerfbake_image').style.opacity = "1";
-                }
-
-                function nerfbake_stop() {
-                  document.getElementById('nerfbake_image').style.opacity = "0";
-                }
-                nerfbake_stop()
-              </script>
-
-            -->  
-              <a href="https://wanghzccls.github.io/">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3534678.3539352">
               <papertitle>Instant Graph Neural Networks for Dynamic Graphs.</papertitle>
               </a>
               <br>
@@ -164,10 +184,13 @@
               Jiajun Liu, 
               Sibo Wang
               <br>
-              <em>To appear in KDD</em>, 2022
+              <em>KDD</em>, 2022
               <br>
 
               <a href="https://arxiv.org/pdf/2206.01379.pdf">Technical Report</a>
+              /
+              <a href="https://github.com/zheng-yp/InstantGNN">code</a>
+              
 
 
               <p></p>
@@ -177,26 +200,6 @@
 
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-            <!--
-              <div class="one">
-                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfbake_15.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfbake_160.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfbake_start() {
-                  document.getElementById('nerfbake_image').style.opacity = "1";
-                }
-
-                function nerfbake_stop() {
-                  document.getElementById('nerfbake_image').style.opacity = "0";
-                }
-                nerfbake_stop()
-              </script>
-
-            -->  
               <a href="https://dl.acm.org/doi/abs/10.1145/3447548.3467243">
               <papertitle>Approximate Graph Propagation</papertitle>
               </a>
@@ -401,7 +404,9 @@
             <td width="100%" valign="middle">
               <heading>Honors and Awards</heading>
               <ul></ul>
-              <li> <strong><a href="http://scholarship.baidu.com">Baidu Scholarship</a></strong>, 2021 <strong>(10 students worldwide)</strong>. 
+              <li> <strong><a href="http://scholarship.baidu.com">Baidu Scholarship</a></strong>, 2021 <strong>(10 Chinese students worldwide)</strong>. 
+              <ul></ul>
+              <li> <strong><a href="https://www.microsoft.com/en-us/research/academic-program/fellowships-microsoft-research-asia/">Microsoft Research Asia Fellowship</a></strong>, 2022 <strong>(12 students in the Asia-Pacific region)</strong>. 
               <ul> </ul>
               <li> National Scholarship, 2021. 
               <ul></ul>
@@ -412,6 +417,20 @@
           </tr>
         </table>
 
+        <!--
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+          <td width="100%" valign="middle">
+            <heading>Academic Services</heading>
+             <ul></ul>
+              <p>PC member/Reviewer:</p>
+                <li>International Conference on Knowledge Discovery and Data Mining (KDD), 2023</li>
+                <li>ACM International Conference on Web Search and Data Mining (WSDM), 2023</li>
+                <li>International Conference on Machine Learning (ICML), 2022</li>
+          </td>
+        </tr>
+      </table>
+      -->
 
 
 
@@ -452,7 +471,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                  Last update: June 2022 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
+                  Last update: January 2023 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
               </p>
             </td>
           </tr>
