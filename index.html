@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Hanzhi Wang &nbsp / &nbsp 王涵之</name>
               </p>
-              <p>I am currently a fourth-year Ph.D. candidate at School of Information, <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, where I am fortunate to be advised by Professor <a href="http://weizhewei.com/"><b>Zhewei Wei</b></a>.
+              <p>I am currently a final year PhD candidate at School of Information, <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, where I am very fortunate to be advised by Prof. <a href="http://weizhewei.com/"><b>Zhewei Wei</b></a>.
               </p>
               <p> 
                 Before that, I received my B.E. degree in Computer Science and Technology at School of Information, Renmin University of China in June 2019. 
@@ -93,6 +93,10 @@
             <heading>News</heading>
             <div class="list scroll">
             <p>
+            [02/2024]  One paper was accepted to STOC 2024. 
+            </p>
+
+            <p>
             [08/2023] I am attending VLDB 2023 in person to present our paper in Session G4 this Wednesday (Aug. 30th, 1:30 PM - 3:00 PM). Warmly welcome to stop by and chat with me!
             </p>
             
@@ -153,27 +157,48 @@
         <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Publications</heading>
-              <p>
+              <!-- <p>
               Note: Authors marked with * are the corresponding authors.
+              </p> -->
+              <p>
+              Note: Papers marked with <span class="style_1">†</span> use alphabetic ordering of authors, following the convention of theoretical computer science.
               </p>
-            
               
               <a href="https://www.vldb.org/pvldb/vol16/p2949-wang.pdf">
-                <papertitle>Estimating Single-Node PageRank in O(min(d<sub>t</sub>, m<sup>1/2</sup>))</span> Time. </papertitle>
+                <papertitle>Revisiting Local Computation of PageRank: Simple and Optimal. </papertitle><span class="style_1">†</span>
                 </a>
                 <br>
                 <strong>Hanzhi Wang</strong>,
-                Zhewei Wei*
+                Zhewei Wei, 
+                Ji-Rong Wen, 
+                Mingji Yang
                 <br>
-                <em>VLDB</em>, 2023
+                <em>STOC</em>, 2024
                 <br>
-                
-                <a href="https://arxiv.org/pdf/2307.13162.pdf">Technical Report</a>
   
                 <p></p>
-                <p>For the problem of estimating a single node's PageRank score in an undirected graph, we tighten the upper bound for query time complexity from O((nd<sub>t</sub>)<sup>1/2</sup>) to O(min(d<sub>t</sub>, m<sup>1/2</sup>)) (omitting logarithmic factors). Here n and m denote the number of nodes and edges in the given graph, respectively. d<sub>t</sub> denotes the degree of the given target node t. </sub></p>
+                <p>We establish matching upper and lower bounds for the worst-case computational complexity of single-node PageRank computation on directed graphs. Additionally, for the celebrated ApproxContributions algorithm (also known as Backward Push or Local Push, proposed by Andersen, Borgs, Chayes, Hopcroft, Mirrokni, and Teng in WAW 2017), we upper bound its worst-case computational complexity on directed graphs and prove its optimality by establishing a matching lower bound. </p>
               </td>
             </tr>
+
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <a href="https://www.vldb.org/pvldb/vol16/p2949-wang.pdf">
+                  <papertitle>Estimating Single-Node PageRank in O(min(d<sub>t</sub>, m<sup>1/2</sup>))</span> Time. </papertitle>
+                  </a>
+                  <br>
+                  <strong>Hanzhi Wang</strong>,
+                  Zhewei Wei
+                  <br>
+                  <em>VLDB</em>, 2023
+                  <br>
+                  
+                  <a href="https://arxiv.org/pdf/2307.13162.pdf">Technical Report</a>
+    
+                  <p></p>
+                  <p>For the problem of estimating a single node's PageRank score in an undirected graph, we tighten the upper bound for query time complexity from O((nd<sub>t</sub>)<sup>1/2</sup>) to O(min(d<sub>t</sub>, m<sup>1/2</sup>)) (omitting logarithmic factors). Here n and m denote the number of nodes and edges in the given graph, respectively. d<sub>t</sub> denotes the degree of the given target node t. </sub></p>
+                </td>
+          </tr>
 
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
@@ -183,7 +208,7 @@
               <br>
               Lu Yi,
               <strong>Hanzhi Wang</strong>,
-              Zhewei Wei*
+              Zhewei Wei
               <br>
               <em>KDD</em>, 2023
               <br>
@@ -206,7 +231,7 @@
               </a>
               <br>
               <strong>Hanzhi Wang</strong>,
-              Zhewei Wei*,
+              Zhewei Wei,
               Junhao Gan, 
               Ye Yuan, 
               Xiaoyong Du, 
@@ -234,7 +259,7 @@
               <br>
               Yanping Zheng, 
               <strong>Hanzhi Wang</strong>,
-              Zhewei Wei*,
+              Zhewei Wei,
               Jiajun Liu, 
               Sibo Wang
               <br>
@@ -260,7 +285,7 @@
               <br>
               <strong>Hanzhi Wang</strong>,
               Mingguo He,
-              Zhewei Wei*,
+              Zhewei Wei,
               Sibo Wang, 
               Ye Yuan, 
               Xiaoyong Du, 
@@ -310,7 +335,7 @@
               </a>
               <br>
               <strong>Hanzhi Wang</strong>,
-              Zhewei Wei*,
+              Zhewei Wei,
               Yu Liu, 
               Ye Yuan, 
               Xiaoyong Du, 
@@ -359,7 +384,7 @@
               </a>
               <br>
               <strong>Hanzhi Wang</strong>,
-              Zhewei Wei*,
+              Zhewei Wei,
               Junhao Gan, 
               Sibo Wang, 
               Zengfeng Huang
@@ -404,7 +429,7 @@
               </a>
               <br>
               <strong>Hanzhi Wang</strong>,
-              Zhewei Wei*,
+              Zhewei Wei,
               Ye Yuan, 
               Xiaoyong Du, 
               Ji-Rong Wen
@@ -518,9 +543,12 @@
              <ul></ul>
               <p>PC member/Reviewer:</p>
                 <li>Annual Conference on Neural Information Processing Systems (NeurIPS), 2023 </li>
-                <li>International Conference on Knowledge Discovery and Data Mining (KDD), 2023</li>
+                <li>International Conference on Knowledge Discovery and Data Mining (KDD), 2023/2024</li>
+                <li>International Conference on Learning Representations (ICLR), 2024</li>
                 <li>ACM International Conference on Web Search and Data Mining (WSDM), 2023/2024</li>
+                <li>SIAM International Conference on Data Mining (SDM), 2024</li>
                 <li>Australasian Database Conference (ADC), 2023</li>
+                <li>IEEE Communications Magazine</li>
                 <li>Information Retrieval Journal </li>
                 <li>International Conference on Machine Learning (ICML), 2022</li>
           </td>
@@ -567,7 +595,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                  Last update: Aug. 2023 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
+                  Last update: Feb. 2024 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
               </p>
             </td>
           </tr>
