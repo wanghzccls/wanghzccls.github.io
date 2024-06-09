@@ -20,10 +20,14 @@
               <p style="text-align:center">
                 <name>Hanzhi Wang &nbsp / &nbsp 王涵之</name>
               </p>
-              <p>I am currently a final year PhD candidate at School of Information, <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, where I am very fortunate to be advised by Prof. <a href="http://weizhewei.com/"><b>Zhewei Wei</b></a>.
+              <p> I received my Ph.D. degree in Big Data Science and Engineering from School of Information at <a href="https://www.ruc.edu.cn/en">Renmin University of China</a> in May 2024. My supervisor is <a href="http://weizhewei.com/"><b>Prof. Zhewei Wei</b></a>.
+                <!-- I am currently a final year PhD candidate at School of Information, <a href="https://www.ruc.edu.cn/en">Renmin University of China</a>, where I am very fortunate to be advised by Prof. <a href="http://weizhewei.com/"><b>Zhewei Wei</b></a>. -->
+              <!-- </p>
+              <p>  -->
+                Before that, I received my B.E. degree in Computer Science and Technology at School of Information, Renmin University of China in June 2019. 
               </p>
               <p> 
-                Before that, I received my B.E. degree in Computer Science and Technology at School of Information, Renmin University of China in June 2019. 
+                I was a visiting scholar from June 2023 to August 2023 in School of Computing and Information Systems at The University of Melbourne, advised by <a href="https://sites.google.com/site/junhogan/">Dr. Junhao Gan</a>. I was an exchange student from December 2022 to May 2023 in School of Computing at National University of Singapore, advised by <a href="https://www.comp.nus.edu.sg/~xiaoxk/">Prof. Xiaokui Xiao</a>.
               
                 <!--
                 I was a recepient of the 2022 Microsoft Research Asia Fellowship and the 2021 Baidu Scholarship.
@@ -72,17 +76,21 @@
                   <li> theory on graph representation learning
                 </ul>
                 -->
-              My research focuses on the development of provably-good scalable algorithms for graph data. In particular, I am interested in designing nearly linear or sub-linear time algorithms for large-scale graph analysis and learning problems.
-              Specifically, my research can be categorized into three aspects:  
+                My research interests are graph algorithms, with a particular focus on the design of scalable algorithms for large-scale graphs. 
+                My previous work primarily centers on sublinear-time algorithms for random-walk probability estimation on large graphs. I am also interested in local clustering and graph neural networks.
+              <!-- the development of provably-good scalable algorithms for graph data. In particular, I am interested in designing nearly linear or sub-linear time algorithms for large-scale graph analysis and learning problems. -->
+              <!-- Specifically, my research can be categorized into three aspects:   -->
               <!--
               <li> efficient approximation of node proximities (e.g., PageRank)
               <li> efficient approximation of node similarities (e.g., SimRank)
               <li> scalable Graph Neural Networks (GNN) models
               -->
-              <li> improving the computational complexities of various node proximity metrics, especially for PageRank, Personalized PageRank and Heat Kernel PageRank; 
+              <!-- <li> improving the computational complexities of various node proximity metrics, especially for PageRank, Personalized PageRank and Heat Kernel PageRank; 
               <li> designing algorithms for efficiently estimating the popular node similarity metric, SimRank, on large graphs;
               <li> designing scalable Graph Neural Network (GNN) models on large graphs. 
-              </p>
+              </p> -->
+              <p></p>
+              <b>I am on the job market!</b> Please email me if you are interested. I am also happy to give talks on my research in related seminars.
             </td>
           </tr>
         </tbody></table>
@@ -93,6 +101,18 @@
             <heading>News</heading>
             <div class="list scroll">
             <p>
+            [20/05/2024]  I successfully defended my doctoral degree and am now a PhD! Heartfelt thanks to my advisor, Prof. Zhewei Wei. His wisdom, kindness, dedication to research, and support for students will always be a beacon for me, guiding me to pursue my dreams on life's journey.
+            </p>
+
+            <p>
+            [05/2024]  My single-author paper was accepted to KDD 2024. 
+            </p>
+
+            <p>
+            [05/2024]  I was awarded the 2024 Wu Yuzhang Scholarship, which is the most prestigious scholarship at our university and was awarded to only ten students across all schools, including both undergraduate and graduate students. 
+            </p>
+
+            <p>
             [03/2024]  One paper was accepted to TKDE 2024. The paper's reviewing process spanned over one year, but very happily, it concluded with an encouraging outcome. Special thanks to Mingji!
             </p>
 
@@ -100,11 +120,11 @@
             [02/2024]  One paper was accepted to STOC 2024. 
             </p>
 
-            <p>
+            <!-- <p>
             [08/2023] I am attending VLDB 2023 in person to present our paper in Session G4 this Wednesday (Aug. 30th, 1:30 PM - 3:00 PM). Warmly welcome to stop by and chat with me!
-            </p>
+            </p> -->
             
-            <p>
+            <!-- <p>
             [08/2023] I was awarded a certificate of excellence in reviewing at KDD 2023.
             </p>
                 
@@ -122,7 +142,7 @@
 
             <p>
             [12/2022] I will spend a couple of months at National University of Singapore (NUS) as an exchange student under the supervision of <a href="https://www.comp.nus.edu.sg/~xiaoxk/"><b>Prof. Xiaokui Xiao</b></a>.
-            </p>
+            </p> -->
 
             <!--
             <p>
@@ -169,21 +189,16 @@
               </p>
               
               <a href="https://wanghzccls.github.io/">
-                <papertitle>Revisiting Local Computation of PageRank: Simple and Optimal. </papertitle><span class="style_1">†</span>
+                <papertitle>Revisiting Local PageRank Estimation on Undirected Graphs: Simple and Optimal. </papertitle><span class="style_1"></span>
                 </a>
                 <br>
-                <strong>Hanzhi Wang</strong>,
-                Zhewei Wei, 
-                Ji-Rong Wen, 
-                Mingji Yang
+                <strong>Hanzhi Wang</strong>
                 <br>
-                <em>STOC</em>, 2024
+                <em>KDD</em>, 2024
                 <br>
-
-                <a href="https://arxiv.org/pdf/2403.12648.pdf">Technical Report</a>
   
                 <p></p>
-                <p>We establish matching upper and lower bounds for the worst-case computational complexity of single-node PageRank computation on directed graphs. Additionally, for the celebrated ApproxContributions algorithm (also known as Backward Push or Local Push, proposed by Andersen, Borgs, Chayes, Hopcroft, Mirrokni, and Teng in WAW 2007), we upper bound its worst-case computational complexity on directed graphs and prove its optimality by establishing a matching lower bound. </p>
+                <p>I establish matching upper and lower bounds for the worst-case computational complexity of single-node PageRank computation on undirected graphs, using surprisingly simple algorithms and analysis.  </p>
               </td>
             </tr>
 
@@ -210,6 +225,28 @@
                   <p>We recap several frequently used techniques for Personalized PageRank (PPR) computation and conduct a comprehensive survey of various recent PPR algorithms from an algorithmic perspective. </p>
                 </td>
           </tr>
+
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <a href="https://wanghzccls.github.io/">
+                  <papertitle>Revisiting Local Computation of PageRank: Simple and Optimal. </papertitle><span class="style_1">†</span>
+                  </a>
+                  <br>
+                  <strong>Hanzhi Wang</strong>,
+                  Zhewei Wei, 
+                  Ji-Rong Wen, 
+                  Mingji Yang
+                  <br>
+                  <em>STOC</em>, 2024
+                  <br>
+  
+                  <a href="https://arxiv.org/pdf/2403.12648.pdf">Technical Report</a>
+    
+                  <p></p>
+                  <p>We establish matching upper and lower bounds for the worst-case computational complexity of single-node PageRank computation on directed graphs. Additionally, for the celebrated ApproxContributions algorithm (also known as Backward Push or Local Push, proposed by Andersen, Borgs, Chayes, Hopcroft, Mirrokni, and Teng in WAW 2007), we upper bound its worst-case computational complexity on directed graphs and prove its optimality by establishing a matching lower bound. </p>
+                </td>
+              </tr>
+
 
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
@@ -557,14 +594,19 @@
             <td width="100%" valign="middle">
               <heading>Honors and Awards</heading>
               <ul></ul>
-              <li>
-              Certified Excellence in Reviewing for KDD 2023.
-              <ul></ul>
               <li> <strong><a href="https://www.microsoft.com/en-us/research/academic-program/fellowships-microsoft-research-asia/">Microsoft Research Asia Fellowship</a></strong>, 2022 <strong>(awarded to twelve PhD students in the Asia-Pacific region)</strong>. 
               <ul> </ul>
-              <li> <strong><a href="http://scholarship.baidu.com">Baidu Scholarship</a></strong>, 2021 <strong>(awarded to ten Chinese students worldwide)</strong>.
+              <li> <strong><a href="http://scholarship.baidu.com">Baidu Scholarship</a></strong>, 2021 <strong>(awarded to ten graduate students worldwide)</strong>.
+              <ul></ul>
+              <li>
+              Wu Yuzhang Scholarship, 2024 (awarded to 10 students in Renmin University of China).
               <ul></ul>
               <li> National Scholarship, 2021. 
+              <ul></ul>
+              <li> Beijing Outstanding Gradudate, 2024. 
+              <ul></ul>
+              <li>
+              Certified Excellence in Reviewing for KDD 2023.
               <ul></ul>
               <li> The Outstanding Innovative Talents Cultivation Funded Programs of Renmin University of China, 2020. 
               <ul></ul>
@@ -633,7 +675,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                  Last update: Mar. 2024 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
+                  Last update: June. 2024 &nbsp&nbsp&nbsp&nbsp <a href="https://jonbarron.info/">Template</a>
               </p>
             </td>
           </tr>
